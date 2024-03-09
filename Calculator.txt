@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Asset/bootstrap-5.3.2-dist/css/bootstrap.css">
+    <title>Calculator</title>
+</head>
+<body background="Asset/img_7.png">
+<center>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <input style="background-color: #3b5998"  class="form-control" type="text" id="output"  >
+            <br>
+            <table>
+                <tr>
+                    <td><button onclick="fun('1')" class="form-control">1</button></td>
+                    <td><button onclick="fun('2')" class="form-control">2</button> </td>
+                    <td><button onclick="fun('3')" class="form-control">3</button> </td>
+                    <td><button onclick="fun('+')" id="+" style="width: 150%;margin-left: 95%;background-color: #2ecc71" class="form-control ">+</button> </td>
+                </tr>
+                <tr>
+                   <td> <button onclick="fun('4')" class="form-control">4</button></td>
+                    <td> <button onclick="fun('5')" class="form-control">5</button></td>
+                    <td> <button onclick="fun('6')" class="form-control">6</button></td>
+                    <td><button onclick="fun('-')" style="width: 150%;margin-left: 95%;background: #2ecc71" class="form-control ">-</button></td>
+                </tr>
+                <tr>
+                   <td> <button onclick="fun('7')" class="form-control">7</button></td>
+                    <td> <button onclick="fun('8')" class="form-control">8</button></td>
+                    <td> <button onclick="fun('9')" class="form-control">9</button></td>
+                    <td><button onclick="fun('*')" style="width: 150%;margin-left: 95%;background: #2ecc71" class="form-control ">x</button></td>
+                </tr>
+                <tr>
+                    <td> <button onclick="fun('0')" class="form-control">0</button></td>
+                    <td> <button onclick="fun('.')" class="form-control">.</button></td>
+                    <td> <button onclick="backspace()" class="form-control">del</button></td>
+                    <td> <button onclick="fun('/')" style=" width: 150%;margin-left: 95%;background: #2ecc71" class="form-control">/</button></td>
+                </tr>
+                <tr>
+                    <td> <button onclick="fun('00')" class="form-control">00</button></td>
+                    <td> <button onclick="fun('%')" class="form-control">%</button></td>
+                    <td> <button onclick="calc()" class="form-control">=</button> </td>
+                    <td><button onclick="clearScreen()" style=" width: 150%;margin-left: 95%;background: #2ecc71" class="form-control">C</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</center>
+<script>
+    function fun(value) {
+        document.getElementById("output").value +=value;
+    }
+    function clearScreen() {
+        document.getElementById("output").value = null;
+    }
+    function  backspace () {
+        let currentValue = document.getElementById("output").value;
+        document.getElementById("output").value = currentValue.slice(0, -1);
+    }
+    function calc() {
+        let a = document.getElementById('output').value;
+        document.getElementById('output').value = eval(a);
+    }
+</script>
+</body>
