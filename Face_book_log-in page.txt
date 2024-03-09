@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Face-Book</title>
+    <link rel="stylesheet" href="3.css">
+</head>
+<body>
+<div class="d1">
+    <h1 class="s1">Facebook</h1>
+    <div class="form1">
+    <form action="" class="inner_form">
+        <div class="email">
+            <label class="email1">email or phone</label>
+            <input type="email" placeholder="Email or phone">
+           <p><input type="checkbox">Keep me sign in</p>
+        </div>
+        <div class="pass">
+            <label class="password">Password</label>
+        <input type="password" placeholder="Paswoord">
+            <p>Forget your password?</p>
+        </div>
+        <button class="Button1" type="submit" style="width: 50%; height: 80%;margin: 18px">Log in</button>
+    </form>
+    </div>
+</div>
+<table style="height: 700px;width: 1570px" bgcolor="#edf0f5" >
+    <tr>
+        <td class="table_left">
+            <h2 class="left_side">Connect with your friends and the <br>world around you on Facebook</h2>
+            <br><br><br>
+            <p class="left_side1"><b>See photoes and updates</b> from in News Feed<br><br>
+            <b>Share what is new</b> in your life on your time line <br><br>
+            <b>Find more</b> of what you are looking for with graph search</p>
+        </td>
+        <td class="table_right">
+            <h1 class="sign">sign up</h1>
+            It's free and always will be
+            <form action="" class="form2">
+                <br>
+                <input type="text" placeholder="First name">
+                <input type="text" placeholder="Last name">
+                <br><br>
+                <input type="text" placeholder="Email or mobile number">
+                <br><br>
+                <input type="text" placeholder="Re-enter email or phonr number">
+                <br><br>
+                <input type=passwordt"  placeholder="New password">
+                <br><br>
+            </form>
+            <b style="font-size: larger">Birthday</b>
+            <br>
+            <select>
+                <option value="">Day</option>
+                <option value="DD">01</option>
+                <option value="DD">02</option>
+                <option value="DD">03</option>
+                <option value="DD">04</option>
+                <option value="DD">05</option>
+                <option value="DD">06</option>
+                <option value="DD">07</option>
+                <option value="DD">08</option>
+                <option value="DD">09</option>
+                <option value="DD">10</option>
+                <option value="DD">11</option>
+                <option value="DD">12</option>
+                <option value="DD">13</option>
+                <option value="DD">14</option>
+                <option value="DD">15</option>
+                <option value="DD">16</option>
+                <option value="DD">17</option>
+                <option value="DD">18</option>
+            </select>
+            <select>
+                <option value="">Year</option>
+                <option value="YYYY">1980</option>
+                <option value="DD">02</option>
+                <option value="DD">03</option>
+                <option value="DD">04</option>
+                <option value="DD">05</option>
+                <option value="DD">06</option>
+                <option value="DD">07</option>
+                <option value="DD">08</option>
+                <option value="DD">09</option>
+                <option value="DD">10</option>
+                <option value="DD">11</option>
+                <option value="DD">12</option>
+                <option value="DD">13</option>
+                <option value="DD">14</option>
+                <option value="DD">15</option>
+                <option value="DD">16</option>
+                <option value="DD">17</option>
+                <option value="DD">18</option>
+            </select>
+            <select>
+                <option value="">Month</option>
+                <option value="MM">01</option>
+                <option value="MM">02</option>
+                <option value="MM">03</option>
+                <option value="MM">05</option>
+                <option value="MM">04</option>
+                <option value="DD">06</option>
+                <option value="DD">07</option>
+                <option value="DD">08</option>
+                <option value="DD">09</option>
+                <option value="DD">10</option>
+                <option value="DD">11</option>
+                <option value="DD">12</option>
+                <option value="DD">13</option>
+                <option value="DD">14</option>
+                <option value="DD">15</option>
+                <option value="DD">16</option>
+                <option value="DD">17</option>
+                <option value="DD">18</option>
+            </select>
+            <span class="span_1">Why do i need to provide my birthday ?</span>
+            <br><br>
+            <input type="radio" id="fem" class="m0">
+            <label for="fem" class="gender">Female</label>
+            <input type="radio" id="male" class="f1">
+            <label for="male" class="gender">Male</label>
+            <br><br>
+            <p style="font-size: small"> By clicking sign up,you agree to our<strong style="color: #3b5998">Terms</strong> and that<br> you have read our<strong style="color: #3b5998"> Data use policy</strong> including our<br>
+              <strong style="color: #3b5998">  Cookie use </strong></p>
+            <div><br>
+            <button type="submit" class="button">Sign up</button>
+            </div>
+            <br>
+            <hr style="width: 70%;margin-left: 4px;margin-top: -5px">
+            <br>
+            Create a Page for a celebrity band or business.
+        </td>
+    </tr>
+</table>
+</body>
+</html>
