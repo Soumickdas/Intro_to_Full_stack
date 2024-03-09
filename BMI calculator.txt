@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>BMI</title>
+</head>
+<body style="background: #8bb9fe">
+
+<center><div class="card" style="width: 25rem;">
+    <div class="card-body">
+        <img class="vector_2" style="height: 300px; width: 350px" src="Asset/Default.png" id="displayImage" > <br>
+        <label><b>Enter your weight</b></label>
+        <br>
+        <input type="number" id="Weight" class="form-control">
+        <label><b>Enter your Height</b></label>
+        <input type="number" id="Height" class="form-control">
+        <br><button onclick="calculateBMI()" class="form-control" style="width: 50%;background: #0a53be;color: white">Submit</button>
+        <br>
+        <textarea id="disp" class="form-control"></textarea>
+    </div>
+</div>
+</center>
+<script>
+    function calculateBMI() {
+        let Height = parseInt(document.getElementById("Height").value)
+        let weight = parseInt(document.getElementById("Weight").value)
+        let bmi = weight / ((Height / 100) * (Height / 100));
+        document.getElementById("disp").innerHTML = "Your BMI is: " + bmi.toFixed(2);
+        let value = parseFloat(document.getElementById("disp").value)
+        let image = document.getElementById("displayImage");
+        if (bmi <= 18) {
+            image.src = "Asset/Under-weight.png";
+
+        } else if (bmi > 18 && bmi < 24) {
+            image.src = "Asset/Normal.png";
+
+        } else if (bmi >= 25 && bmi <= 29) {
+            image.src = "Asset/Over-weight.png";
+
+        } else if (bmi > 29) {
+            image.src = "Asset/Obese.png"; // Default image if value is between 18 and 25
+            image.alt = "Default_image.png";
+        }
+    }
+
+</script>
+
+</body>
+</html>
